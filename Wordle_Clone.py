@@ -1,6 +1,4 @@
 import random
-#from colorama import init
-#init()
 from colorama import Fore
 from colorama import Style
 
@@ -34,7 +32,6 @@ def check_word(user_input, selected_word) :
     for k in range(0, 5):
         l = Letter(Fore.RED, user_input[k])
         for j in range(0,5):
-            #print(k, j, user_input[k], selected_word[k])
             if user_input[k] == selected_word[k]:
                 l.color = Fore.GREEN
             elif user_input[k] == selected_word[j]:
@@ -59,7 +56,6 @@ def start_again():
         exit()
 
 def game():
-# Main loop
     selected_word = select_word()
     print_menu()
     i = 0
@@ -81,5 +77,3 @@ def game():
 
 game()
 
-    #To DO:  2) write remaining turns, 4) If only one letter i.e "s" in selected_word,
-    # one "s" should be yellow or green, second "s" red. 5) create a view
