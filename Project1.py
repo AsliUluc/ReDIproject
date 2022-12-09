@@ -62,7 +62,6 @@ def game():
 # Main loop
     selected_word = select_word()
     print_menu()
-    print(selected_word)
     i = 0
     while i < 6:
         user_input = get_user_input(i)
